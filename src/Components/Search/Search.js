@@ -46,3 +46,5 @@ export const Search = () => {
         <p id='game_description'>{gameResults.description_raw}</p>
     </div>
   )};
+
+  // Coding Temple is the best
