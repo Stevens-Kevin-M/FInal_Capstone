@@ -3,10 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { FirebaseAppProvider, AuthCheck } from 'reactfire'; // New Import
+import 'firebase/auth'; // NEW IMPORT
+import { firebaseConfig } from './firebaseConfig' // NEW IMPORT
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <FirebaseAppProvider firebaseConfig={firebaseConfig}> {/* New Provider */}
+      <Router>
+        <Switch>
+        <Route path='/'>
+            <App></App>
+          </Route>
+        </Switch>
+      </Router>
+    </FirebaseAppProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

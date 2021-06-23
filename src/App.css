@@ -2,37 +2,125 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#searchinput {
+  width: 20%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  color: white;
+  border-color: gold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#submitsearch {
+  color: gold;
+  border-radius: 5px;
+  background-color: black;
+  width: 10%;
+  border-color: gold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+::placeholder {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#background_image {
+  border-radius: 7px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#game_description {
+  flex: auto;
+  text-align: center;
+  color: white;
+  font-family: Impact;
+  -webkit-text-stroke-width: .35px;
+  -webkit-text-stroke-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  font-family: impact;
+  align-items: center;
+  min-height: 7vh;
+  background: rgb(0, 0, 0);
+  color:white
+}
+
+#MustPlay {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./assets/images/halo-infinite-master-chief-uhdpaper.com-4K-6.jpg);
+  color: white;
+  background-size: 100%;
+  font-family: impact;
+  -webkit-text-stroke-width: .75px;
+  -webkit-text-stroke-color: black;
+}
+
+#SignIn {
+  align-items: center;
+}
+
+body {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./assets/images/halo-infinite-master-chief-uhdpaper.com-4K-6.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+
+h1 {
+  color: black;
+  font-family: impact;
+  font-size: 55px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: gold;
+}
+
+h2 {
+  color: white;
+  font-family: impact;
+  font-size: 32px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+#metacritic {
+  color: white;
+  font-family: impact;
+  -webkit-text-stroke-width: .75px;
+  -webkit-text-stroke-color: black;
+
+}
+
+h5 {
+  color: white;
+  font-family: impact;
+  -webkit-text-stroke-width: .75px;
+  -webkit-text-stroke-color: black;
+
+}
+
+.nav-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+img {
+  width: 55%;
+  height: 55%;
+}
+
+.results-container {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#googbutton {
+  background-color: gold;
+  color: black;
 }
